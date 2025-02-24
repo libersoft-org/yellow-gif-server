@@ -40,10 +40,13 @@ class API {
    }
   }
 
-  return {
+  const response = {
    error: 0,
    data: await result.json(),
   };
+
+  console.log('API response:', response);
+  return response;
 
  }
 
